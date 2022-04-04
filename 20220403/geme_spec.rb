@@ -1,7 +1,7 @@
 require_relative '../spec/spec_helper'
 require_relative './game'
 
-context '20220403' do
+describe '20220403' do
   before do
     @game = Game.new
   end

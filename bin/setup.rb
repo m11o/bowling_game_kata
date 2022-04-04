@@ -14,9 +14,7 @@ GAME_SPEC_TEMPLATE = <<~"EOH"
   require_relative '../spec/spec_helper'
   require_relative './game'
 
-  describe 'game' do
-    context '#{formatted_now}' do
-    end
+  describe '#{formatted_now}' do
   end
 EOH
 
