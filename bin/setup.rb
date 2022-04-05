@@ -7,14 +7,18 @@ formatted_now = now.strftime('%Y%m%d')
 
 ROOT_PATH = __dir__ + '/..'
 GAME_SCRIPT_TEMPLATE = <<~'EOH'
-  class Game
+  module #{formatted_now}
+    class Game
+    end
   end
 EOH
 GAME_SPEC_TEMPLATE = <<~"EOH"
   require_relative '../spec/spec_helper'
-  require_relative './game'
+  require_relative '../#{formatted_now}/game'
 
-  describe '#{formatted_now}' do
+  module D#{formatted_now}
+    describe '#{formatted_now}' do
+    end
   end
 EOH
 
