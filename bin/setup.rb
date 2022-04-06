@@ -6,8 +6,8 @@ now = Time.new
 formatted_now = now.strftime('%Y%m%d')
 
 ROOT_PATH = __dir__ + '/..'
-GAME_SCRIPT_TEMPLATE = <<~'EOH'
-  module #{formatted_now}
+GAME_SCRIPT_TEMPLATE = <<~"EOH"
+  module D#{formatted_now}
     class Game
     end
   end
